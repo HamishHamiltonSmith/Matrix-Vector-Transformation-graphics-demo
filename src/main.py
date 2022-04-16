@@ -1,7 +1,5 @@
 import pygame
 import math
-
-import quamash
 import operations as op
 import time
 
@@ -70,7 +68,7 @@ def drawVector(basis,fullPoint,pointX,pointY):
 def drawGrid():
     global screen
 
-    img = pygame.image.load("/home/kali/Software/Python/Matrix-Transformations/assets/grid.png")
+    img = pygame.image.load("assets/grid.png")
     screen.blit(img,(0,0))
 
 print("Determinent: " + str(op.get_determinent(baseM.get("i"),baseM.get("j"))))
